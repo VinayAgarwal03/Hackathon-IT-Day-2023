@@ -1,0 +1,134 @@
+<style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 50%;
+    display: block;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>Rapid AID</b></a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="./about.html" class="w3-bar-item button">About</a>
+      <a href="./login.html" class="w3-bar-item button">Login<style>
+        .button {
+          background-color: Green;
+          text-align: center;
+          text-decoration: none;
+          font-size: 16px;
+          margin: 1px;
+        }
+        </style>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>We are not an option, we are a choice.</p>
+  <p>We will be the #1 choice of 10 Million people because we're the solution to India's intra-city commuting problems. With assured safety, we also provide economically priced rides.</p>
+</div>
+
+<h2 style="text-align:center">Our Services</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./Ambulance.jpg" alt="Jane" style="width: 100%">
+      <div class="container">
+        <h2>Emergency Report</h2>
+        <p class="title">Book Accidental Ambulance</p>
+        <p></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="./Police-Station.jpg" alt="Police Complaint" style="width:100%">
+      <div class="container">
+        <h2>Police Complaint</h2>
+        <p class="title">File a Police Complaint</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="./Hospital.jpg" alt="Nearest Hospital" style="width:100%">
+      <div class="container">
+        <h2>Nearest Hospital</h2>
+        <p class="title">Shortest Route to Hospital</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
